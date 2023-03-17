@@ -1,7 +1,8 @@
 //Bienvenida
-alert('Bienvenido a Valhalla Digital')
-alert('cargue su mail para recibir su factura')
+let nombre = prompt('Ingrese su nombre:')
 
+alert('Bienvenido '+nombre+' a Valhalla Digital')
+alert('Por favor, cargue su mail para recibir su factura')
 
 
 let userEmail = ''
@@ -94,6 +95,7 @@ const calcularEnvio = (subtotal) => {
         alert('El costo de envio es de $1000. El total mas envio es: $'+subtotal)
     } else {
         alert('El total de tu compra es: $'+subtotal)
+        alert('Retira por Alberdi 345, Quilmes')
     }
     return subtotal
 
