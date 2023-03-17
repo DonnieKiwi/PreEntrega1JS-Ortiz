@@ -14,7 +14,6 @@ do {
     userEmail = prompt('Ingrese su correo electrónico:')
     confirmUserEmail = prompt('Confirme su correo electrónico:')
 
-   
     if (userEmail === confirmUserEmail) {
         alert('El correo '+userEmail+' ha sido registrado con éxito!')
         askAgain = false
