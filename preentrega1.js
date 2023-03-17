@@ -1,5 +1,26 @@
 //Bienvenida
 alert('Bienvenido a Valhalla Digital')
+alert('cargue su mail para recibir su factura')
+
+
+
+let userEmail = ''
+let confirmUserEmail = ''
+let askAgain = true
+
+do {
+    
+    userEmail = prompt('Ingrese su correo electrónico:')
+    confirmUserEmail = prompt('Confirme su correo electrónico:')
+
+   
+    if (userEmail === confirmUserEmail) {
+        alert('El correo '+userEmail+' ha sido registrado con éxito!')
+        askAgain = false
+    } else {
+        alert('Los correos deben de ser iguales!')
+    }
+} while (askAgain)
 
 const compraProducto = () => {
     let producto = ''
